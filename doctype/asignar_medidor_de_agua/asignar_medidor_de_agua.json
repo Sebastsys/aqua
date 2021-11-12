@@ -1,0 +1,84 @@
+{
+ "autoname": "field:medidor",
+ "creation": "2020-08-25 06:51:42.463512",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medidor",
+  "fecha",
+  "cuenta",
+  "usuario",
+  "zona",
+  "tarifa"
+ ],
+ "fields": [
+  {
+   "fieldname": "cuenta",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "# Cuenta",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "medidor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medidor",
+   "options": "Medidor",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "usuario",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Usuario",
+   "options": "Usuarios de Agua",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zona",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Zona",
+   "options": "Zonas"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "tarifa",
+   "fieldtype": "Select",
+   "label": "Tipo de Tarifa",
+   "options": "RESIDENCIAL\nCOMERCIAL\nINDUSTRIAL",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-09-13 16:19:09.812294",
+ "modified_by": "Administrator",
+ "module": "jaap",
+ "name": "Asignar Medidor de Agua",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

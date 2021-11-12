@@ -1,0 +1,81 @@
+{
+ "creation": "2020-08-17 15:35:00.381444",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "medidor",
+  "lectura_a",
+  "lectura",
+  "observacion",
+  "usuario",
+  "zona"
+ ],
+ "fields": [
+  {
+   "fieldname": "observacion",
+   "fieldtype": "Data",
+   "label": "Observaci\u00f3n"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "medidor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "# Medidor",
+   "options": "Asignar Medidor de Agua",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "medidor.usuario",
+   "fieldname": "usuario",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Usuario",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medidor.zona",
+   "fieldname": "zona",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Zona",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "lectura",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Lectura ",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "lectura_a",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lectura Anterior",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-12 19:53:31.937507",
+ "modified_by": "Administrator",
+ "module": "jaap",
+ "name": "lectura_usuarios",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

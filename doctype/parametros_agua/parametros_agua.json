@@ -1,0 +1,115 @@
+{
+ "creation": "2020-08-24 08:25:53.567128",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec0",
+  "listaprecio",
+  "producto",
+  "producto2",
+  "sec00",
+  "almacen",
+  "puntoemision",
+  "sec1",
+  "tarifaresidencial",
+  "tarifacomercial",
+  "tarificaindustrial"
+ ],
+ "fields": [
+  {
+   "fieldname": "producto",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consumo de Agua",
+   "options": "Productos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "almacen",
+   "fieldtype": "Link",
+   "label": "SRI-Establecimiento",
+   "options": "Almacenes",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "almacen.puntoemision",
+   "fieldname": "puntoemision",
+   "fieldtype": "Data",
+   "label": "SRI-Punto Emisi\u00f3n",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "TARIFAS DE AGUA"
+  },
+  {
+   "fieldname": "tarifaresidencial",
+   "fieldtype": "Table",
+   "label": "Tarifa Residencial",
+   "options": "tarifa_residencial"
+  },
+  {
+   "fieldname": "tarifacomercial",
+   "fieldtype": "Table",
+   "label": "Tarifa Comerial",
+   "options": "tarifa_comercial"
+  },
+  {
+   "fieldname": "tarificaindustrial",
+   "fieldtype": "Table",
+   "label": "Tarifa Industrial",
+   "options": "tarifa_industrial"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec0",
+   "fieldtype": "Section Break",
+   "label": "Concepto de consumo"
+  },
+  {
+   "fieldname": "producto2",
+   "fieldtype": "Link",
+   "label": "Mantenimiento ",
+   "options": "Productos"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec00",
+   "fieldtype": "Section Break",
+   "label": "Configuraci\u00f3n para facturaci\u00f3n electr\u00f3nica"
+  },
+  {
+   "fieldname": "listaprecio",
+   "fieldtype": "Link",
+   "label": "Lista de Precios",
+   "options": "Lista de Precios",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-09-15 05:40:18.216782",
+ "modified_by": "Administrator",
+ "module": "jaap",
+ "name": "Parametros Agua",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

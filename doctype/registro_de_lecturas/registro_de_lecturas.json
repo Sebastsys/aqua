@@ -1,0 +1,89 @@
+{
+ "allow_import": 1,
+ "autoname": "format:{anio}-{mes}",
+ "creation": "2020-08-17 15:35:27.299667",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "anio",
+  "fecha",
+  "col1",
+  "mes",
+  "sec",
+  "lectura_usuarios",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lectura_usuarios",
+   "fieldtype": "Table",
+   "label": "Usuarios",
+   "options": "lectura_usuarios"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Registro de Lecturas",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "2020",
+   "fieldname": "anio",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "A\u00f1o",
+   "options": "2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2031\n2032\n2033\n2034\n2035",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mes",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mes",
+   "options": "Enero\nFebrero\nMarzo\nAbril\nMayo\nJunio\nJulio\nAgosto\nSeptiembre\nOctubre\nNoviembre\nDiciembre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-09-17 11:34:44.243140",
+ "modified_by": "Administrator",
+ "module": "jaap",
+ "name": "Registro de Lecturas",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

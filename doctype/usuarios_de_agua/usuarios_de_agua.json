@@ -1,0 +1,149 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:nombres",
+ "creation": "2020-08-17 11:39:15.918988",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_identificacion",
+  "nombres",
+  "correo",
+  "direccion",
+  "fecha_ingeso",
+  "col001",
+  "ruc",
+  "telefono",
+  "telefonoc",
+  "fechacumpleanios",
+  "secmedidores",
+  "medidores",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "CEDULA-05",
+   "fieldname": "tipo_identificacion",
+   "fieldtype": "Select",
+   "label": "Tipo de identificaci\u00f3n",
+   "options": "RUC-04\nCEDULA-05",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ruc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RUC/CI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "label": "Nombres y Apellidos o Raz\u00f3n Social",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "sin@correo.com",
+   "fieldname": "correo",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n de Correo Electr\u00f3nico"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono Celular"
+  },
+  {
+   "fieldname": "telefonoc",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono Convencional"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n / Ubicaci\u00f3n"
+  },
+  {
+   "fieldname": "fechacumpleanios",
+   "fieldtype": "Date",
+   "label": "Fecha de Cumplea\u00f1os"
+  },
+  {
+   "fieldname": "fecha_ingeso",
+   "fieldtype": "Date",
+   "label": "Fecha de Ingreso"
+  },
+  {
+   "fieldname": "col001",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "secmedidores",
+   "fieldtype": "Section Break",
+   "label": "Medidores de Agua"
+  },
+  {
+   "fieldname": "medidores",
+   "fieldtype": "Table",
+   "options": "Asignar Medidor de Agua",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Usuarios de Agua",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-09-06 16:06:35.348206",
+ "modified_by": "Administrator",
+ "module": "jaap",
+ "name": "Usuarios de Agua",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA - ADMINISTRADOR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "ruc,telefono",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
