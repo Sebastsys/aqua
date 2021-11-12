@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include app_aqua *.css
+recursive-include app_aqua *.csv
+recursive-include app_aqua *.html
+recursive-include app_aqua *.ico
+recursive-include app_aqua *.js
+recursive-include app_aqua *.json
+recursive-include app_aqua *.md
+recursive-include app_aqua *.png
+recursive-include app_aqua *.py
+recursive-include app_aqua *.svg
+recursive-include app_aqua *.txt
+recursive-exclude app_aqua *.pyc
