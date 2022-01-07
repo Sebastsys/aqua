@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "creation": "2021-11-13 01:03:58.020724",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "establecimiento",
+  "direccion",
+  "puntoemision",
+  "sec001",
+  "user_almacen"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "establecimiento",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Establecimiento (C\u00f3digo SRI)",
+   "length": 3,
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Direcci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "puntoemision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Punto de Emisi\u00f3n (C\u00f3digo SRI)",
+   "length": 3,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec001",
+   "fieldtype": "Section Break",
+   "label": "Solo pueden acceder a este almac\u00e9n los usuarios"
+  },
+  {
+   "fieldname": "user_almacen",
+   "fieldtype": "Table",
+   "label": "Usuarios",
+   "options": "user_almacen"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-13 01:03:58.020724",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "Sucursal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

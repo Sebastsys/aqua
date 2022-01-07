@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2021-11-23 00:36:06.497308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "minimo",
+  "maximo",
+  "valor"
+ ],
+ "fields": [
+  {
+   "fieldname": "minimo",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M\u00ednimo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maximo",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M\u00e1ximo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ValorAdicional",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-23 00:36:06.497308",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "tarifa_residencial",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

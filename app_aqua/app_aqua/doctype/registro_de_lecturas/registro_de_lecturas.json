@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "format:{anio}-{mes}",
+ "creation": "2021-12-03 20:07:16.822778",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "anio",
+  "fecha",
+  "col001",
+  "mes",
+  "sec001",
+  "lectura_usuarios",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "2020",
+   "fieldname": "anio",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "A\u00f1o",
+   "options": "2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2031\n2032\n2033\n2034\n2035",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col001",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mes",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mes",
+   "options": "Enero\nFebrero\nMarzo\nAbril\nMayo\nJunio\nJulio\nAgosto\nSeptiembre\nOctubre\nNoviembre\nDiciembre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec001",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lectura_usuarios",
+   "fieldtype": "Table",
+   "label": "Usuarios",
+   "options": "lectura_usuarios"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Registro de Lecturas",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Registro de Lecturas",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-12-15 00:34:58.624835",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "Registro de Lecturas",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

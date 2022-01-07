@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "autoname": "field:medidor",
+ "creation": "2021-11-12 22:07:45.489925",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medidor",
+  "fecha",
+  "cuenta",
+  "usuario",
+  "zona",
+  "tarifa",
+  "activo"
+ ],
+ "fields": [
+  {
+   "fieldname": "medidor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medidor",
+   "options": "Medidor",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "cuenta",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "# Cuenta",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "usuario",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Usuario",
+   "options": "Usuarios Aqua",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zona",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Zona",
+   "options": "Zonas"
+  },
+  {
+   "fieldname": "tarifa",
+   "fieldtype": "Select",
+   "label": "Tipo de Tarifa",
+   "options": "RESIDENCIAL\nCOMERCIAL\nINDUSTRIAL",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "activo",
+   "fieldtype": "Check",
+   "label": "Activo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-16 23:42:42.133553",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "Asignar Medidor de Agua",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

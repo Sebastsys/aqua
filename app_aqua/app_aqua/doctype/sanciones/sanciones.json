@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-15 00:21:27.560922",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fecha",
+  "usuario",
+  "multa",
+  "valor",
+  "medidor",
+  "observacion",
+  "facturado",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "label": "C\u00f3digo",
+   "options": "S-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "usuario",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Usuario",
+   "options": "Usuarios Aqua",
+   "reqd": 1
+  },
+  {
+   "fieldname": "multa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Multa",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medidor",
+   "fieldtype": "Link",
+   "label": "Medidor",
+   "options": "Medidor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "observacion",
+   "fieldtype": "Small Text",
+   "label": "Observaci\u00f3n"
+  },
+  {
+   "default": "0",
+   "fieldname": "facturado",
+   "fieldtype": "Check",
+   "label": "Facturado",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sanciones",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-12-15 01:21:29.167471",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "Sanciones",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

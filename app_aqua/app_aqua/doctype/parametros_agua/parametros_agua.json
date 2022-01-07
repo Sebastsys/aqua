@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "creation": "2021-11-23 00:38:57.236928",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec001",
+  "listaprecio",
+  "producto",
+  "producto2",
+  "sec002",
+  "almacen",
+  "puntoemision",
+  "sec003",
+  "tarifaresidencial",
+  "tarifacomeercial",
+  "tarifaindustrial"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec001",
+   "fieldtype": "Section Break",
+   "label": "Concepto de consumo"
+  },
+  {
+   "fieldname": "listaprecio",
+   "fieldtype": "Link",
+   "label": "Lista de Precios",
+   "options": "Item Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "producto",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consumo de Agua",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "producto2",
+   "fieldtype": "Link",
+   "label": "Mantenimiento",
+   "options": "Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec002",
+   "fieldtype": "Section Break",
+   "label": "Configuraci\u00f3n para facturaci\u00f3n electr\u00f3nica"
+  },
+  {
+   "fieldname": "almacen",
+   "fieldtype": "Link",
+   "label": "SRI-Establecimiento",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "Warehouse.puntoemision",
+   "fieldname": "puntoemision",
+   "fieldtype": "Data",
+   "label": "SRI-Punto Emisi\u00f3n",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec003",
+   "fieldtype": "Section Break",
+   "label": "Tarifas de Agua"
+  },
+  {
+   "fieldname": "tarifaresidencial",
+   "fieldtype": "Table",
+   "label": "Tarifa Residencial",
+   "options": "tarifa_residencial"
+  },
+  {
+   "fieldname": "tarifacomeercial",
+   "fieldtype": "Table",
+   "label": "Tarifa Comercial",
+   "options": "tarifa_comercial"
+  },
+  {
+   "fieldname": "tarifaindustrial",
+   "fieldtype": "Table",
+   "label": "Tarifa Industrial",
+   "options": "tarifa_industrial"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-12-16 10:36:55.802023",
+ "modified_by": "Administrator",
+ "module": "App Aqua",
+ "name": "Parametros Agua",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
